@@ -1,0 +1,13 @@
+-> What are containers?
+> They are building blocks that contains, pads, and aligns content whithin a given device or viewport. 
+
+-> container types
+.container -> max-width changes at each breakpoint. It is a responsive class.
+
+.container-fluid -> total screen width (100%).
+
+.container-{breakpoint} -> 100% wide until the specified breakpoint is reached.
+
+-> See the illustration I made about responsive containers in the 'Bootstrap - Containers.png' file.
+
+-> instagram: @dinizdev 
