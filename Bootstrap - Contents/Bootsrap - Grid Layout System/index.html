@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Grid Layout</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        .elements {
+            height: 200px;
+        }
+        .container {
+            margin-top: 40px;
+        }
+        .height100 {
+            height: 100px;
+        }
+        /* applied class for header & footer */
+        .height300 {
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid Layout System</h1>
+    <div class="container">
+        <div class="row">
+            <p>Fixed and non-fixed columns</p>
+            <div class="col bg-info bg-opacity-50 elements">Calculation column</div>
+            <div class="col-3 bg-info bg-opacity-75 elements">3 columns</div>
+            <div class="col-6 bg-info elements">6 columns</div>
+            <div class="col bg-info bg-opacity-50 elements">Calculation column</div>
+        </div>
+    </div>
+
+    <!-- commonly used layout type -->
+    <div class="container">
+        <div class="row">
+            <p>Commonly used layout type</p>
+            <div class="col-12 bg-info height100">1</div>
+            <div class="col-12 col-md-3 bg-black bg-opacity-50 height300">2</div>
+            <div class="col-12 col-md-9 bg-black bg-opacity-75 height300">3</div>
+            <div class="col-12 bg-info bg-opacity-50 height100">4</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="row">
+                <!-- different wide columns -->
+                <p>Different wide columns</p>
+                <div class="col bg-dark bg-opacity-75 height100">5 columns wide</div>
+                <div class="col bg-dark bg-opacity-50 height100"></div>
+                <div class="col bg-dark bg-opacity-25 height100"></div>
+                <div class="col bg-dark bg-opacity-75 height100"></div>
+                <div class="col bg-dark bg-opacity-50 height100"></div>
+            </div>
+            <div class="row">
+                <!-- 7 columns wide -->
+                <div class="col bg-dark bg-opacity-75 height100">7 columns wide</div>
+                <div class="col bg-dark bg-opacity-50 height100"></div>
+                <div class="col bg-dark bg-opacity-25 height100"></div>
+                <div class="col bg-dark bg-opacity-75 height100"></div>
+                <div class="col bg-dark bg-opacity-50 height100"></div>
+                <div class="col bg-dark bg-opacity-25 height100"></div>
+                <div class="col bg-dark bg-opacity-75 height100"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
