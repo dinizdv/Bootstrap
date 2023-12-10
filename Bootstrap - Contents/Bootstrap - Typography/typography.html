@@ -13,7 +13,8 @@
         strong {
             color: dodgerblue;
         }
-        </style>
+    </style>
+
 </head>
 <body>
     <!-- div.container>h${h$ - Title }*6 -->
@@ -28,9 +29,9 @@
         <h6>h6 - Title </h6>
     </div>
 
-    <!-- Paragraphs with heading aspects -->
+    <!-- Paragraphs with title aspects -->
     <div class="container">
-        <p><strong>Paragraphs with heading aspects</strong></p>
+        <p><strong>Paragraphs with title aspects</strong></p>
         <p class="h1">.h1 - Paragraph 1</p>
         <p class="h2">.h2 - Paragraph 2</p>
         <p class="h3">.h3 - Paragraph 3</p>
@@ -56,19 +57,84 @@
      </div>
 
      <div class="container">
-        <p>Text in <mark>Highlighted</mark></p>
-        <p>Text <u>underlined</u></p>
-        <p>Text in <small>small</small></p>
-        <p>Text <ins>recently inserted</ins></p>
-        <p>Text with the appearance of <del>deleted</del></p>
-        <p>Text in <strong>bold</strong></p>
-        <p>Text in <em>italic</em></p>        
+        <p>mark: Text in <mark>Highlighted</mark></p>
+        <p>u: Text <u>underlined</u></p>
+        <p>small: Text in <small>small</small></p>
+        <p>ins:Text <ins>recently inserted</ins></p>
+        <p>del: Text with the appearance of <del>deleted</del></p>
+        <p>strong: Text in <strong>bold</strong></p>
+        <p>em: Text in <em>italic</em></p>        
      </div>
 
+     <!-- defines an abbreviation or an acronym -->
      <div class="container">
+        <p><strong>ABBR -> abbreviation or acronym</strong></p>
         <abbr title="Cascading Style Sheets">CSS</abbr>
     </div>
-     
     
+<div class="container">
+    <!-- keyboard input -->
+    <p><strong>KBD -> keyboard input</strong></p>
+    <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text.</p>
+</div>
+
+<!-- show computer output -->
+<div class="container">
+    <p><strong>samp -> show computer output</strong></p>
+    <p>It wasn't the most helpful of error messages as it simply said: <samp>An error has occurred.</samp></p>
+</div>
+
+<div class="container">
+    <!-- figure -> agroup the elements semantically -->
+                <figure>
+                    <!-- blockquote -> encapsulate self-contained content -->
+                    <blockquote class="blockquote" cite="Bruno Diniz">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat illum nesciunt omnis ex facere voluptates est dignissimos suscipit blanditiis! In ullam soluta natus unde assumenda quisquam?</p>
+                    </blockquote>
+                    <!-- figcaption -> add a caption to the figure -->
+                    <figcaption class="blockquote-footer">
+                        <cite>Bruno Diniz</cite>, digital content creator
+                    </figcaption>
+                </figure>
+
+                </div>
+
+                <div class="container">
+                    <!-- unstyled list -->
+                    <p><strong>ul.list-unstyled</strong></p>
+                    <ul class="list-unstyled">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                </div>
+
+                <!-- inline list -->
+                <div class="container">
+                    <p><strong>ul.list-inline && li.list-inline-item</strong></p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">Item 1</li>
+                        <li class="list-inline-item">Item 2</li>
+                        <li class="list-inline-item">Item 3</li>
+                        <li class="list-inline-item">Item 4</li>
+                        <li class="list-inline-item">Item 5</li>
+                    </ul>
+                </div>
+
+                <div class="container">
+                    <p><strong>dl (definition list) > (dt (define a term) + dd (define a description))</strong></p>
+                    <dl>
+                        <dt>Term 1</dt>
+                        <dd>Term Description 1</dd>
+                        <dt>Term 2</dt>
+                        <dd>Term Description 2</dd>
+                        <dt>Term 3</dt>
+                        <dd>Term Description 3</dd>
+                        <dt>Term 4</dt>
+                        <dd>Term Description 4</dd>
+                        <dt>Term 5</dt>
+                        <dd>Term Description 5</dd>
+                    </dl>
+                </div>
 </body>
 </html>
