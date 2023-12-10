@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+        .container {
+            margin-top: 48px;
+         }
+         strong {
+            color:coral;
+         }
+    </style>
+
+</head>
+<body>
+    <div class="container text-center">
+        <p><strong>img-fluid -> obeys container behavior</strong></p>
+        <img src="rectangle.png" alt="Responsive image" class="img-fluid">
+    </div>
+
+    <div class="container text-center">
+        <p><strong>img-thumbnail -> image with rounded border</strong></p>
+        <img src="rectangle.png" alt="Responsive image" class="img-thumbnail">
+</div>
+
+    <div class="container text-center">
+        <p><strong>rounded -> border-radius applied</strong></p>
+            <img src="rectangle.png" class="img-fluid rounded" alt="Responsive image">
+</div>
+
+<div class="container">
+    <p class="text-center"><strong>Image to the left of the text</strong></p>
+        <img src="rectangle.png" class="rounded float-start me-3" alt="Image to the left of the text">
+        <p class="text-end">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam asperiores magni minus expedita cupiditate, quaerat sunt incidunt perferendis porro laboriosam doloribus enim itaque mollitia esse? Unde, tempora placeat excepturi eaque, delectus architecto harum corrupti perspiciatis mollitia error tempore in perferendis laudantium? Voluptatum laboriosam animi cupiditate rem nobis facere, modi eaque commodi ducimus provident est, a ex debitis. Cumque nemo nulla nobis repellat nostrum. Laboriosam modi at, eligendi tenetur exercitationem nam nihil, sapiente fugit distinctio expedita nulla ut ad accusamus voluptates delectus illo error fuga placeat ipsa dolorum officia temporibus minima. Voluptatem tempora libero consequatur dolore autem velit expedita inventore eveniet. Repellat amet quia ea voluptatem et deserunt omnis animi provident quibusdam distinctio possimus, est inventore dignissimos? Recusandae dicta vitae debitis sapiente dolorem maiores repellat dolores repudiandae hic tempora soluta laudantium assumenda facilis blanditiis, earum adipisci vel doloremque accusamus deleniti expedita esse consequatur! Ipsa vel illum adipisci dolor cumque libero praesentium temporibus doloribus id tenetur. Cupiditate quos illo dolorum, et reiciendis, officia aspernatur nemo labore laborum est totam rem quis ad accusamus debitis asperiores, minima molestias tempore harum. Doloremque a magni totam eveniet. Beatae temporibus libero voluptate eaque voluptas repudiandae cumque. Distinctio provident quisquam aspernatur placeat delectus minima at voluptate perferendis!</p>
+</div>
+
+<div class="container text-center">
+    <!-- figure -> image with legend -->
+    <p><strong>figure > img + caption</strong></p>
+    <figure class="figure">
+        <img src="rectangle.png" alt="" class="img-fluid rounded">
+        <figcaption class="figcaption text-center">Figure Caption - text-center</figcaption>
+    </figure>
+</div>
+
+<div class="container text-center">
+    <!-- figure -> image with legend -->
+    <p><strong>figure > img + caption</strong></p>
+    <figure class="figure">
+        <img src="rectangle.png" alt="" class="img-fluid rounded">
+        <figcaption class="figcaption text-end">Figure Caption - text-end</figcaption>
+    </figure>
+</div>
+
+</body>
+</html>
