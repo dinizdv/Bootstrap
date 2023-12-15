@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility Settings</title>
+    <link rel="stylesheet" href="carousel.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+  </head>   
+
+  <style>
+         body {
+            background-color: #42464f;
+        }
+        .divOverflow {
+            height: 150px;
+        }
+  </style>
+
+    <div class="container text-bg-dark">
+        <h1 class="text-center">Visibility Settings</h1>
+            <p class="text-warning"><strong>d.block</strong></p>
+            <div class="p-4 col-3-d-block mt-4 text-bg-primary">div 1</div>
+            <div class="p-4 col-3-d-block mt-4 text-bg-warning">div 2</div>
+            <div class="p-4 col-3-d-block mt-4 text-bg-light">div 3</div>
+            <hr>
+
+            <p class="text-warning"><strong>d-inline-block</strong></p>
+            <div class="p-4 col-3 d-inline-block text-bg-success">div 1</div>
+            <div class="p-4 col-3 d-inline-block ms-4 text-bg-danger">div 2</div>
+            <div class="p-4 col-3 d-inline-block ms-4 text-bg-info">div 3</div>
+            <hr>
+
+            <p>Mobile Aplication</p>
+            <div class="p-4 d-block mt-4 text-bg-primary">div 1</div>
+            <div class="p-4 d-block mt-4 text-bg-warning">div 2</div>
+            <!-- disappears after 150% zoom-->
+            <div class="p-4 d-none d-lg-block mt-4 text-bg-light">div 3 - d-none d-lg-block (disappears after 150% zoom)</div>
+            <hr>
+
+            <!-- lt -> Less Than        ||      gt -> Greater Than -->
+            <p><strong class="text-warning">d-print-none: </strong>prevent &lt;header&gt from appearing in print</p>
+            <header class="text-bg-primary d-print-none">
+                <article class="my-3">
+                    <h1 class="display-3 text-bg-success text-center">Cabeçalho</h1>
+                    <div class="container p-3 lh-lg">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis beatae laboriosam soluta eos vero temporibus harum?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam debitis saepe temporibus tempora voluptatem qui neque sapiente quo, consequuntur, eum dicta quibusdam totam autem.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora est dolorum libero?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <!-- appear only in print -->
+                    <p class="d-none d-print-block"><strong>Fonte: </strong>dinizdev.com.br</p>
+
+                    <!-- other interesting tag:
+                        * .invisible -> becomes invisible, but continues rendering 
+                    --> 
+
+                    <hr>
+             <div class="container text-bg-info mt-3">
+                <div class="row justify-content-evenly">
+                    <div class="divOverflow p-0 col-3 overflow-auto"><strong class="d-flex justify-content-center text-bg-warning">overflow-auto</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium fugiat inventore porro? Vitae maiores culpa sequi alias distinctio natus, facilis numquam accusantium animi laborum iure sit ducimus ipsa illum quia!</div>
+                    <div class="divOverflow p-0 col-3 overfloy-hidden"><strong class="d-flex justify-content-center text-bg-warning">overflow-hidden</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore non autem eos sequi quae mollitia unde recusandae provident odio, quia, incidunt voluptates possimus ipsum veniam error quis odit vel cumque?</div>
+                    <div class="divOverflow p-0 col-3 overflow-visible"><strong class="d-flex justify-content-center text-bg-warning">overflow-visible</strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse dolorem ex odit, ipsam similique eveniet ipsum voluptatibus ea facilis? Numquam nisi reiciendis porro voluptatum repudiandae expedita maxime aliquam amet omnis.</div>
+                    <div class="divOverflow p-0 col-3 overflow-scroll"><strong class="d-flex justify-content-center text-bg-warning">overflow-scroll</strong>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam blanditiis optio, dolor explicabo molestias officia labore est, magnam pariatur dignissimos laborum sint facere corporis vitae perspiciatis omnis aliquid ad deleniti.</div>
+            </div>
+            </div>
+            </div>
+        </article>
+
+        </header>
+
+    </div>
+  <body>
+  </body>
+</html>
