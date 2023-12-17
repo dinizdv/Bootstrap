@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs and Buttons</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+</head>
+<body>
+    <!-- Bootstrap <select> -->
+    <h1 class="text-center">Inputs</h1>
+    <div class="container p-3">
+        <label class="form-label text-bg-primary px-3">&lt;select&gt; class="form-select"</label><br>
+        <label for="form-label">Select a fruit:</label>
+            <select class="form-select">
+                <option value="">Banana</option>
+                <option value="">Apple</option>
+                <option value="">Strawberry</option>
+                <option value="">Mango</option>
+                <option value="">Avocado</option>
+            </select>
+    </div>
+
+    <!-- <select> smaller -->
+    <div class="container p-3">
+        <label class="form-label text-bg-success px-3">&lt;div&gt; class="col-4" &lt;select&gt; class="form-select"</label><br>
+        <div class="col-4">
+        <label for="form-label">Select a fruit:</label>
+            <select class="form-select">
+                <option value="">Banana</option>
+                <option value="">Apple</option>
+                <option value="">Strawberry</option>
+                <option value="">Mango</option>
+                <option value="">Avocado</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- multiple property -->
+        <div class="container p-3">
+            <label class="form-label text-bg-danger px-3">&lt;select&gt; multiple</label><br>
+            <div class="col-4">
+            <label for="form-label">Select a fruit:</label>
+                <select class="form-select" multiple>
+                    <option value="">Banana</option>
+                    <option value="">Apple</option>
+                    <option value="">Strawberry</option>
+                    <option value="">Mango</option>
+                    <option value="">Avocado</option>
+                </select>
+            </div>
+        </div>
+
+    <!-- multiple property and size -->
+        <div class="container p-3">
+            <label class="form-label text-bg-secondary px-3">&lt;select&gt; multiple size="5"</label><br>
+            <div class="col-4">
+            <label for="form-label">Select a fruit:</label>
+                <select class="form-select" multiple size="5">
+                    <option value="">Banana</option>
+                    <option value="">Apple</option>
+                    <option value="">Strawberry</option>
+                    <option value="">Mango</option>
+                    <option value="">Avocado</option>
+                </select>
+            </div>
+        </div>
+        
+        <!-- multiple property, size and disabled -->
+        <div class="container p-3">
+            <label class="form-label text-bg-dark px-3">&lt;select&gt; multiple size="5" disabled</label><br>
+            <div class="col-4">
+            <label for="form-label">Select a fruit:</label>
+                <select class="form-select" multiple size="5" disabled>
+                    <option value="">Banana</option>
+                    <option value="">Apple</option>
+                    <option value="">Strawberry</option>
+                    <option value="">Mango</option>
+                    <option value="">Avocado</option>
+                </select>
+            </div>
+            <hr>
+        </div>
+        
+        <!-- buttons -->
+        <div class="container p-3">
+            <label class="form-label text-bg-danger px-3">&lt;button&gt;</label><br>
+            <div class="d-flex justify-content-between align-items-center">
+            <a href="#" class="btn btn-sm btn-warning">btn-sm</a>
+            <a href="#" class="btn btn-success">btn(default)</a>
+            <a href="#" class="btn btn-lg btn-primary">btn-lg</a>
+
+            <!-- outlined button -->
+            <a href="#" class="btn btn-sm btn-outline-dark">btn-outline-dark</a>
+            <a href="#" class="btn btn-outline-success">btn-outline-success</a>
+            <a href="#" class="btn btn-lg btn-outline-primary">btn-outline-primary</a>
+
+            <!-- disabled button  -->
+            <button class="btn btn-lg btn-danger" disabled>disabled</button>
+
+            <!-- marked button  -->
+            <button class="btn btn-lg btn-secondary" data-bs-toggle="button">data-bs-toggle="button"</button>
+        </div>
+        <hr>
+        </div>
+
+        <div class="container p-3">
+            <label class="form-label text-bg-secondary px-3">&lt;input type="range" name="" id="" class="form-range" min="1" max="5" step="1" value="4&gt;
+            </label><br>
+            <input type="range" name="" id="" class="form-range" min="1" max="5" step="1" value="1">
+            <hr>        
+        </div>
+            <!-- input type="file" -->
+            <div class="container p-3">
+                <label for="file" class="form-label text-bg-success px-3">input type="file"</label>
+                <input type="file" id="file" class="form-control">
+        <hr>
+        </div>
+
+            <!-- input type="color" -->
+            <div class="container p-3">
+                <label class="form-label text-bg-primary px-3">input type="color"</label>
+                <input type="color" id="color" class="form-control">
+        <hr>
+        </div>
+</body>
+</html>
