@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Formatting</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <!-- classes:
+        .form-label -> for label
+        .form-control -> for input
+        .form-text -> smaller and sophisticated text
+        .form-check-input -> for checkbox
+        .form-check-label -> for checkbox label
+        .btn-primary -> for button styling
+        .form-control-sm -> input smaller than default
+        .form-control-lg -> input greater than default
+        .form-control-plaintext -> display text in the format of an input, but without borders (useful for styling)
+    -->
+        <h1 class="text-center">Forms</h1>
+        <div class="container mt-3">
+            <form>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" class="form-control" placeholder=".form-label (for label)    |    .form-control (for input)">
+                <div class="form-text">Your information will never be shared.</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="text" id="password" class="form-control">
+            </div>
+
+            <div>
+
+                <input type="checkbox" id="remember" class="form-check-input">
+                <label for="remember" class="form-check-label">Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+            </form>
+            <hr>
+        </div>
+    
+        <!-- other form with inputs examples -->
+        <div class="container mt-5">
+            <form>
+            <!-- readonly property -->
+            <div class="mb-3">
+                <label for="email" class="form-label text-bg-danger px-3">readonly property</label>
+                <input type="email" id="email" class="form-control" readonly placeholder="you can only copy the text">
+            </div>
+            
+            <!-- disabled property -->
+            <div class="mb-3">
+                <label for="email" class="form-label text-bg-danger px-3">disabled property</label>
+                <input type="email" id="email" class="form-control" disabled placeholder="for viewing only">
+            </div>
+
+            <!-- .form-control-sm -->
+            <div class="mb-3">
+                <label for="email" class="form-label text-bg-success px-3">.form-control-sm</label>
+                <input type="email" id="email" class="form-control form-control-sm" placeholder="input smaller than default">
+            </div>
+
+            <!-- .form-control-lg -->
+            <div class="mb-3">
+                <label for="email" class="form-label text-bg-success px-3">.form-control-lg</label>
+                <input type="email" id="email" class="form-control form-control-lg" placeholder="input greater than default">
+            </div>
+
+            <!-- .form-control-plaintext -->
+            <div class="mb-3">
+                <label for="email" class="form-label text-bg-success px-3">.form-control-plaintext</label>
+                <input type="email" id="email" class="form-control form-control-plaintext" placeholder="display text in the format of an input, but without borders (useful for styling)">
+            </div>
+
+            <!-- input type="file" -->
+            <div class="mb-3">
+                <label for="file" class="form-label text-bg-dark px-3">input type="file"</label>
+                <input type="file" id="file" class="form-control">
+            </div>
+
+            <!-- input type="color" -->
+            <div class="mb-3">
+                <label for="color" class="form-label text-bg-dark px-3">input type="color"</label>
+                <input type="color" id="color" class="form-control">
+            </div>
+
+            <!-- <datalist> -->
+            <div class="mb-3">
+                <label for="color" class="form-label text-bg-primary px-3">&lt;datalist&gt;</label>
+                <input type="text" list="countries" class="form-control" placeholder="Search for a country...">
+            <datalist id="countries">
+                <option value="Brazil"></option>
+                <option value="Germany"></option>
+                <option value="Morroco"></option>
+                <option value="Australia"></option>
+                <option value="Switzerland"></option>
+            </datalist>
+        </div>
+
+        </div>
+
+
+</body>
+</html>
