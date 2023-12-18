@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Fields</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+</head>
+
+<style>
+    body {
+        background-color: #42464f;
+    }
+</style>
+<body>
+    <div class="container p-3 text-bg-dark">
+        <h1 class="text-center">Check Fields</h1>
+        <label class="form-label text-bg-primary px-3">&lt;input type="checkbox"&gt;</label>
+        <div class="form-check">    
+            <!-- checkbox -->
+            <input type="checkbox" name="condition" value="cond" class="form-check-input">
+            <!-- the database considers the name and value -->
+            
+            <label for="new" class="form-check-label" value="n">New product</label>
+        </div>
+
+        <div class="form-check">
+            <!-- checkbox -->
+            <input type="checkbox" name="condition" value="cond" class="form-check-input">
+            <label for="new" class="form-check-label" value="su">Semi-used product</label>
+        </div>
+
+        <div class="form-check">
+            <!-- checkbox -->
+            <input type="checkbox" name="condition" value="cond" class="form-check-input">
+            <label for="new" class="form-check-label" value="u">Used product</label>
+        </div>
+        <hr>
+
+        <!-- radio -->
+        <label class="form-label text-bg-secondary px-3">&lt;input type="radio"&gt;</label>
+        <div class="form-check">    
+            <!-- radio -->
+            <input type="radio" name="condition" value="cond" class="form-check-input">
+            <label for="new" class="form-check-label" value="n">New product</label>
+        </div>
+
+        <div class="form-check">
+            <!-- radio -->
+            <input type="radio" name="condition" value="cond" class="form-check-input">
+            <label for="new" class="form-check-label" value="su">Semi-used product</label>
+        </div>
+
+        <div class="form-check">
+            <!-- radio -->
+            <input type="radio" name="condition" value="cond" class="form-check-input">
+            <label for="new" class="form-check-label" value="u">Used product</label>
+        </div>
+        <hr>
+
+        <!-- form-check-inline -->
+        <label class="form-label text-bg-danger px-3">&lt;input type="radio" class="form-check-inline"&gt;</label><br>
+        <div class="form-check form-check-inline">    
+            <!-- form-check-inline -->
+            <input type="radio" name="condition" value="cond" class="form-check-input">
+            <label for="new" class="form-check-label" value="n">New product</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+            <!-- form-check-inline -->
+            <input type="radio" name="condition" value="cond" class="form-check-input">
+            <label for="new" class="form-check-label" value="su">Semi-used product</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+            <!-- form-check-inline -->
+            <input type="radio" name="condition" value="cond" class="form-check-input">
+            <label for="new" class="form-check-label" value="u">Used product</label>
+        </div>
+        <hr>
+
+        <!-- form-check-reverse -->
+        <label class="form-label text-bg-success px-3">&lt;input type="radio" class="form-check-reverse"&gt;</label>
+        <div class="form-check form-check-reverse">    
+            <!-- form-check-reverse -->
+            <input type="radio" name="condition" value="cond" class="form-check-input">
+            <label for="new" class="form-check-label" value="n">New product</label>
+        </div>
+
+        <div class="form-check form-check-reverse">
+            <!-- form-check-reverse -->
+            <input type="radio" name="condition" value="cond" class="form-check-input">
+            <label for="new" class="form-check-label" value="su">Semi-used product</label>
+        </div>
+
+        <div class="form-check form-check-reverse">
+            <!-- form-check-reverse -->
+            <input type="radio" name="condition" value="cond" class="form-check-input">
+            <label for="new" class="form-check-label" value="u">Used product</label>
+        </div>
+        <hr>
+
+        <!-- form-switch -->
+            <label class="form-label text-bg-warning px-3">&lt;div class="form-check form-switch"&gt;</label>
+            <div class="form-check form-switch">
+            <input type="checkbox" class="form-check-input">
+            <label class="form-check-label" value="u"><-- click</label>
+            </div>
+            <hr>
+
+        <!-- marked button (mark individually) with checkbox -->
+            <label class="form-label text-bg-primary px-3 mb-3">marked button (mark individually)</label><br>
+            <input type="checkbox" id="btnTest1" name="marked" class="btn-check">
+            <label for="btnTest1" class="btn btn-outline-primary">Button</label>
+
+            <input type="checkbox" id="btnTest2" name="marked" class="btn-check">
+            <label for="btnTest2" class="btn btn-outline-primary">Button</label>
+        <hr>
+            
+            <!-- marked button (only one remains) with radio -->
+            <label class="form-label text-bg-light px-3 mb-3">marked button (only one remains)</label><br>
+            <input type="radio" id="btnTest3" name="marked" class="btn-check">
+            <label for="btnTest3" class="btn btn-outline-success">Agree</label>
+
+            <input type="radio" id="btnTest4" name="marked" class="btn-check">
+            <label for="btnTest4" class="btn btn-outline-danger">Disagree</label>
+    </div>
+</body>
+</html>
