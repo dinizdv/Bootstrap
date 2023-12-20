@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>    
+    <title>Form Validation</title>
+    <style>
+        body {
+        background-color: #42464f;
+    }
+    .container {
+    height: 100vh;
+    }
+    .form-control:focus {
+    border: 1px solid rgba(255, 193, 7, 0.65);
+    box-shadow: 0 0 0.25rem 0.135rem rgba(255, 193, 7, 0.65);
+    }
+    textarea {
+    resize: none;
+    height: 140px;
+    }
+
+    @media (min-width: 1024px) {
+        form {
+            width: 50vw; /* below 1024px screens, assumes Bootstrap values */
+        }
+    }
+    @media (min-width: 768px) {
+        form {
+            border-radius: 10px; /* border-radius for screens above 768px (except mobile) */
+        }
+    }
+    @media (max-width: 1024px) {
+        .container {
+            height: auto; /* assumes automatic height */
+        }
+    }
+    </style>    
+</head>
+<body>
+    <!-- classes:
+        .needs-validation ->            |   indicate that a <form> needs validation
+        .is-valid (server side) ->      |   field is valid
+        .is-invalid (server side) ->    |   field is invalid
+        .valid-feedback (message) ->    |   when a input is valid
+        .invalid-feedback (messge) ->   |   when a input is invalid
+
+        properties:
+        required ->                     |   mandatory value
+        novalidate ->                   |   remove default browser validation
+        pattern ->                      |   defines a pattern to be filled in for the data in an input
+    -->
+    <div class="container d-flex flex-column justify-content-center align-items-center p-0">
+        <!-- needs-validation -> validation class   |   novalidation -> remove default validation  -->
+        <form method="post" class="text-bg-dark p-3 h-auto overflow-y-auto needs-validation"
+         novalidate>
+        <h1 class="text-center text-warning">Form Validation</h1>
+
+        <div class="row my-3 g-3">
+            <div class="col-12">
+                <label for="name" class="form-label text-capitalize">full name</label>
+                <input type="text" class="form-control" placeholder="ex: Bruno Diniz Oliveira">
+            </div>
+            <!-- md -> min-width: 768px -->
+            <div class="col-md-6 col-12">
+                <label for="email" class="form-label">Email</label>
+                <input type="text" class="form-control" placeholder="ex: myname2024@gmail.com">
+            </div>
+            <!-- md -> min-width: 768px -->
+            <div class="col-md-4 col-9">
+                <label for="cpf" class="form-label">CPF</label>
+                <input type="text" class="form-control" placeholder="ex: 000-000-000.00" required>
+            </div>
+            <!-- md -> min-width: 768px -->
+            <div class="col-md-2 text-md-start text-end col-3">
+                <label for="age" class="form-label">Age</label>
+                <input type="text" class="form-control" placeholder="ex: 18">
+            </div>
+            <!-- md -> min-width: 768px -->
+            <div class="col-md-6 col-12">
+                <label for="street" class="form-label">Street</label>
+                <input type="text" class="form-control" placeholder="ex: diniz dev">
+            </div>
+            <!-- md -> min-width: 768px -->
+            <div class="col-md-2 col-3">
+                <label for="number" class="form-label">Nº</label>
+                <input type="text" class="form-control" placeholder="ex: 18">
+            </div>
+            <!-- md -> min-width: 768px -->
+            <div class="col-md-4 text-md-start text-end col-9">
+                <label for="cep" class="form-label">CEP</label>
+                <input type="text" class="form-control" placeholder="ex: 00000-000" pattern="[0-9]{8}" required>
+                <div class="invalid-feedback">Incorrect input.</div>
+                <div class="valid-feedback">Correct input.</div>
+            </div>
+            <div class="col-12">
+                <textarea name="" id="suggestion" class="form-control" placeholder="What could we do to improve your experience? &#128516"></textarea>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <button class="btn btn-primary px-3">Submit</button>
+            </div>
+        </div>
+    </form>
+    </div>
+
+    <script>
+        //   script in https://getbootstrap.com/docs/5.0/forms/validation/
+                (function () {
+        'use strict'
+
+        // capturar todos os formulários do HTML que contém a classe .needs-validation e, para cada form, um manipulador é adicionado ao submit (quando o form é submetido). Se algum campo for inválido, uma classe será adicionada (.was-validated)
+        var forms = document.querySelectorAll('.needs-validation')
+
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+            })
+        })()
+    </script>
+</body>
+</html>
