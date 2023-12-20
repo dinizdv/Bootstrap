@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="form.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>    
+    <title>Responsive Form</title>
+
+</head>
+<body>
+    <div class="container d-flex flex-column justify-content-center align-items-center p-0">           
+        <form class="text-bg-dark p-3 h-auto overflow-y-auto">
+        <h1 class="text-center text-warning">Responsive Form</h1>
+
+        <div class="row my-3 g-3">
+            <div class="col-12">
+                <label for="name" class="form-label text-capitalize">full name</label>
+                <input type="text" class="form-control" placeholder="ex: Bruno Diniz Oliveira">
+            </div>
+            <!-- md -> min-width: 768px -->
+            <div class="col-md-6 col-12">
+                <label for="email" class="form-label">Email</label>
+                <input type="text" class="form-control" placeholder="ex: myname2024@gmail.com">
+            </div>
+            <!-- md -> min-width: 768px -->
+            <div class="col-md-4 col-9">
+                <label for="cpf" class="form-label">CPF</label>
+                <input type="text" class="form-control" placeholder="ex: 000-000-000.00">
+            </div>
+            <!-- md -> min-width: 768px -->
+            <div class="col-md-2 text-md-start text-end col-3">
+                <label for="age" class="form-label">Age</label>
+                <input type="text" class="form-control" placeholder="ex: 18">
+            </div>
+            <!-- md -> min-width: 768px -->
+            <div class="col-md-6 col-12">
+                <label for="street" class="form-label">Street</label>
+                <input type="text" class="form-control" placeholder="ex: diniz dev">
+            </div>
+            <!-- md -> min-width: 768px -->
+            <div class="col-md-2 col-3">
+                <label for="number" class="form-label">Nº</label>
+                <input type="text" class="form-control" placeholder="ex: 18">
+            </div>
+            <!-- md -> min-width: 768px -->
+            <div class="col-md-4 text-md-start text-end col-9">
+                <label for="cep" class="form-label">CEP</label>
+                <input type="text" class="form-control" placeholder="ex: 00000-000">
+            </div>
+            <div class="col-12">
+                <textarea name="" id="suggestion" class="form-control" placeholder="What could we do to improve your experience? &#128516"></textarea>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <button class="btn btn-primary px-3">Submit</button>
+            </div>
+        </div>
+    </form>
+    </div>
+</body>
+</html>

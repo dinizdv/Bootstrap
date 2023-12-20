@@ -1,0 +1,30 @@
+body {
+    background-color: #42464f;
+}
+.container {
+height: 100vh;
+}
+.form-control:focus {
+border: 1px solid rgba(255, 193, 7, 0.65);
+box-shadow: 0 0 0.25rem 0.135rem rgba(255, 193, 7, 0.65);
+}
+textarea {
+   resize: none;
+   height: 140px;
+}
+
+@media (min-width: 1024px) {
+    form {
+        width: 50vw; /* below 1024px screens, assumes Bootstrap values */
+    }
+}
+@media (min-width: 768px) {
+    form {
+        border-radius: 10px; /* border-radius for screens above 768px (except mobile) */
+    }
+}
+@media (max-width: 1024px) {
+    .container {
+        height: auto; /* assumes automatic height */
+    }
+}
