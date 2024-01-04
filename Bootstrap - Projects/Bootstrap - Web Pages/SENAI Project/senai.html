@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>    
+    <title>SENAI Project</title>
+    <style>
+  
+  .section-fig img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+article {
+    width: 100%;
+}
+@media (min-width: 992px) {
+    article {
+        width: 30%;
+    }
+}
+
+.form-control:focus {
+border: 1px solid #dc35467a;
+box-shadow: 0 0 0.25rem 0.135rem #dc35467a;
+}
+textarea {
+   resize: none;
+   height: 140px;
+}
+/* form {
+    background-color: #6a6a6a;
+} */
+
+    </style>
+</head>
+<body>
+    <!-- navbar-expand-lg -> without hamburguer menu -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container px-5 py-3">
+          <!-- navbar-brand -> logo/name site -->
+          <a class="navbar-brand" href="#">Navbar</a>
+          <!-- .navbar-toggle -> style to <button>
+               data-bs-toggle -> when button´s clicked, the content colapse    
+               data-bs-target="#navbarSupp... -> elements with #id than are collapseds"
+               aria -> acessibility
+        -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- .navbar-toggler-icon -> hamburguer menu icon in smaller viewports -->
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-lg-0">
+              <li class="nav-item">
+                <!-- .active -> current link -->
+                <a class="nav-link active mx-2" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="#">Link</a>
+              </li>
+              <!-- .dropdown -> suspense menu -->
+              <li class="nav-item dropdown">
+                <!-- .dropdown-toggle -> show or hide the suspense menu -->
+                <a class="nav-link mx-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <!-- separete the content (styling for hr) -->
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link mx-2" href="#">Courses</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link mx-2" href="#">Courses</a>
+            </li>
+            </ul>  <!-- ul.navbar-nav -->
+            <!-- search elements (right) -->      
+            <!-- role -> assistive technologies -->
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- .d-flex and .justify-content-between-> create two sides (left and right) 
+           .flex-column-reverse -> image above, text below -> 
+    -->
+      <main class="container px-5 py-0 py-lg-3 d-flex flex-column-reverse flex-lg-row justify-content-between">
+        <section class="col-12 col-lg-5">
+            <h1>Bem-vindo(a) ao <strong class="text-danger">SENAI</strong></h1>
+            <p class="lead">Nós oferecemos os melhores cursos do país, tanto presencialmente quanto à distância! Será um prazer ter você conosco. Conheça também nossa biblioteca digital, com os melhores livros:</p>
+            <a href="#" class="btn btn-danger p-3 fs-5 p-lg-3">Ver todos os cursos disponíveis</a>
+        </section>
+        <!-- col -> auto column 
+             ps-5 -> padding-start
+        -->
+        <section class="section-fig col my-3 my-lg-0 ms-lg-5">
+            <figure>
+                <img src="senai-main.png" class="rounded-3" alt="">
+            </figure>
+        </section>
+      </main>
+
+
+
+      <!-- cards -->
+      <!-- width card: 30% -->
+      <h1 class="container text-center text-danger">Principais cursos:</h1>
+      <section class="container px-5 py-0 py-lg-3 d-flex flex-column flex-lg-row justify-content-between">
+        <article class="pt-3 py-lg-0">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29uc3RydWN0aW9ufGVufDB8MHwwfHx8MA%3D%3D" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </article>
+        <!-- card 2 -->
+        <article class="pt-3 py-lg-0">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1581276879432-15e50529f34b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGphdmFzY3JpcHR8ZW58MHwwfDB8fHww" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </article>
+        <!-- card 3 -->
+        <article class="py-3 py-lg-0">
+            <div class="card">
+                <img src="https://plus.unsplash.com/premium_photo-1680509034814-e733c5f873ac?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cm9iJUMzJUIzdGljYXxlbnwwfDB8MHx8fDA%3D" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </article>
+      </section>
+
+
+      <!-- forms -->
+      <div class="container px-5 py-0 py-lg-3 d-flex flex-column justify-content-center align-items-center">           
+        <form class="rounded border p-3 h-auto overflow-y-auto">
+        <h1 class="text-center text-danger">Responsive Form</h1>
+
+        <div class="row my-3 g-3">
+            <div class="col-12">
+                <label for="name" class="form-label text-capitalize">full name</label>
+                <input type="text" class="form-control" placeholder="ex: Bruno Diniz Oliveira">
+            </div>
+            <!-- md -> min-width: 768px -->
+            <div class="col-md-6 col-12">
+                <label for="email" class="form-label">Email</label>
+                <input type="text" class="form-control" placeholder="ex: myname2024@gmail.com">
+            </div>
+            <!-- md -> min-width: 768px -->
+            <div class="col-md-4 col-9">
+                <label for="cpf" class="form-label">CPF</label>
+                <input type="text" class="form-control" placeholder="ex: 000-000-000.00">
+            </div>
+            <!-- md -> min-width: 768px -->
+            <div class="col-md-2 text-md-start text-end col-3">
+                <label for="age" class="form-label">Age</label>
+                <input type="text" class="form-control" placeholder="ex: 18">
+            </div>
+            <!-- md -> min-width: 768px -->
+            <div class="col-md-6 col-12">
+                <label for="street" class="form-label">Street</label>
+                <input type="text" class="form-control" placeholder="ex: diniz dev">
+            </div>
+            <!-- md -> min-width: 768px -->
+            <div class="col-md-2 col-3">
+                <label for="number" class="form-label">Nº</label>
+                <input type="text" class="form-control" placeholder="ex: 18">
+            </div>
+            <!-- md -> min-width: 768px -->
+            <div class="col-md-4 text-md-start text-end col-9">
+                <label for="cep" class="form-label">CEP</label>
+                <input type="text" class="form-control" placeholder="ex: 00000-000">
+            </div>
+            <div class="col-12">
+                <textarea name="" id="suggestion" class="form-control" placeholder="What could we do to improve your experience? &#128516"></textarea>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <button class="btn btn-primary px-3">Submit</button>
+            </div>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
