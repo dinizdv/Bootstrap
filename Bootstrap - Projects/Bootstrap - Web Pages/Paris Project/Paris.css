@@ -1,0 +1,70 @@
+
+.container-fluid {
+    padding-inline: 12%;
+}
+.divBg {
+    background-color: #1C1C1C;
+}
+  .navbar {
+    position: absolute; /* text in front of text */
+    top: 0;
+    width: 100%; /* start at the top of the parent element */
+}
+.testing {
+    top: 0;
+    margin-top: 10%;
+    display: flex;
+    justify-content: end;
+}
+.Paris {
+    width: 100%; /* para garantir que a imagem ocupe toda a largura da barra de navegação */
+    height: 20%; /* para manter a proporção da imagem */
+    object-fit: cover; /* para garantir que a imagem cubra toda a área da barra de navegação sem distorcer a imagem */
+}
+.divCard {
+position: relative;
+}
+.divCard img {
+position: absolute;
+top: 0; /* centralizar */
+left: 0; /* centralizar */
+width: 100%; /* imagem caberá dentro de todo card */
+height: 100%; /* imagem caberá dentro de todo card */
+object-fit: cover; /* manter a imagem proporcional */
+z-index: 1; /* imagem aparecerá */
+filter: brightness(50%) opacity(.8); /* retirar brilho */
+border-radius: 4px; /* margem padrão do Bootstrap */
+}
+.divCard svg, .divCard p {
+position: relative;
+z-index: 1;
+}
+svg {
+color: orange;
+}
+.euro {
+color: rgb(33, 255, 33);
+}
+.divForm {
+box-shadow: 0 0 8px #6e6e6e;
+}
+.divForm {
+background-color: #2C2C2C;
+}
+
+.contactUs {
+background: linear-gradient(to right,#2B2B2B, #6e6e6e);
+box-shadow: inset 0 0 7px #6e6e6e;
+}
+form {
+box-shadow: inset 0 0 7px #6e6e6e;
+border: 1px solid #6e6e6e;
+}
+@media (max-width: 768px) {
+    .Paris {
+        height: 40vh;
+    }
+    .collapse a {
+        color: #fff;
+    }
+}
