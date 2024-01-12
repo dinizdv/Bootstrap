@@ -1,0 +1,37 @@
+.section-fig img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+ .card img {
+     width: 100%;
+     height: 300px;
+     object-fit: cover;
+ }
+ article {
+     width: 100%; /* for mobile */
+ }
+ .btn-courses {
+       width: 100%; /* for mobile */
+ }
+ 
+ /* breakpoint lg */
+ @media (min-width: 992px) {
+     article {
+         width: 30%;
+     }
+     .btn-courses {
+       width: auto; /* remove 100% size */
+     }
+ }
+ 
+ .form-control:focus {
+ border: 1px solid #dc35467a;
+ box-shadow: 0 0 0.25rem 0.135rem #dc35467a;
+ }
+ textarea {
+    resize: none;
+    height: 140px;
+ }
+ 
+ 
